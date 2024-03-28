@@ -1,0 +1,45 @@
+body{
+    margin: 0%;
+    font-family: var(--font-type);
+
+}
+
+
+:root{
+    --font-type: Madefor, "Helvetica Neue", Helvetica, Arial, 
+    "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", sans-serif;
+    --weight-regular:400;
+    --weight-medium:530;
+    --weight-bold:700;
+    --weight-xbold:800;
+}
+
+/*PRICE-TABLE*/
+.price-table{
+   border-spacing: 0px;
+   border-collapse: collapse;
+}
+
+.price-table th{  
+    padding: 30px 15px;
+    font-size: 20px;
+    font-weight: var(--weight-regular);
+}
+
+.table-column-title{
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 60px;
+  
+}
+
+.price-table td{
+   padding: 20px 120px 20px 20px;
+}
+
+.price-table th,
+.price-table td{
+    border: 1px solid #dfe5eb;
+
+}
