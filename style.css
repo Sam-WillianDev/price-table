@@ -1,45 +1,121 @@
-body{
+body {
     margin: 0%;
-    font-family: var(--font-type);
+    box-sizing: border-box;
+    font-family: var(--madefor-display-font);
+    background-color: va;
+    height: 100%;
 
 }
 
+/*root font type*/
+:root {
+    --madefor-text-font: "Wix Madefor Text";
+    --madefor-display-font: "Wix Madefor Display";
+    
+}
 
-:root{
-    --font-type: Madefor, "Helvetica Neue", Helvetica, Arial, 
-    "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", sans-serif;
-    --weight-regular:400;
-    --weight-medium:530;
-    --weight-bold:700;
-    --weight-xbold:800;
+/*root font weight*/
+:root {
+    --weight-regular: 400;
+    --weight-medium: 530;
+    --weight-bold: 700;
+    --weight-xbold: 800;
+}
+
+/*root color*/
+:root {
+    --white-color: #fff;
+    --soft-highlight-color: #E8EAFF;
+    --primary-blue-color: #166AEA;
+    --dark-blue-color: #162D3D;
+    --purple-color: #AA4DC8;
+    --lilac-color: #CD68ED;
+    --lavender-color: #CED3FF;
+    --light-blue-color: #BFC5FF;
+}
+
+
+
+/*table-area*/
+#table-column-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.table-area{
+    display: flex;
+    justify-content: center;
+    padding: 100px 90px;
+    margin:auto
 }
 
 /*PRICE-TABLE*/
-.price-table{
-   border-spacing: 0px;
-   border-collapse: collapse;
+.price-table {
+    justify-content: center;
+    border-spacing: 0px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid, var(--soft-highlight-color);
+
 }
 
-.price-table th{  
-    padding: 30px 15px;
-    font-size: 20px;
+.price-table th {
+    padding: auto;
     font-weight: var(--weight-regular);
 }
 
-.table-column-title{
-  display: flex;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 60px;
-  
+
+.table-column-title {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    font-weight: var(--weight-bold);
+
 }
 
-.price-table td{
-   padding: 20px 120px 20px 20px;
+.table-column-title h2 {
+    font-weight: var(--weight-bold);
+}
+
+.table-column-title p {
+    max-width: 350px;
+    font-weight: var(--weight-regular);
+    color: var(--primary-color-font);
+}
+
+.table-column-title hr {
+    width: 37px;
+    height: 3px;
+    border: none;
+    background-color: var(--light-blue-color);
+    border-radius: 10px;
+}
+
+.package-price strong {
+    font-size: 20mm;
+    font-weight: var(--weight-xbold);
+}
+
+
+.table-row-title {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 400px;
+    padding: 20px 100px 20px 20px;
+    font-weight: var(--weight-medium);
 }
 
 .price-table th,
-.price-table td{
+.price-table td {
     border: 1px solid #dfe5eb;
+    font-size: 25px;
+    text-align: center;
+    color: var(--primary-color-font);
 
 }
